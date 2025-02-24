@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button, Input, Panel } from "rsuite";
 import WordDisplay from "../../components/WordDisplay";
-import { useSelector } from "react-redux";
 import { fetchQuestions, selectRandomQuestion, guessLetter, guessWord } from "../../redux/game/gameSlice";
 import { showToast } from "../../ui/toast";
-import { useAppDispatch } from "@hooks/hooks";
+import { useAppDispatch, useAppSelector } from "@hooks/hooks";
 
 const GamePage = () => {
   const dispatch = useAppDispatch();
 
-  const { currentQuestion, guessedLetters, questions, solved } = useSelector((state) => state.game);
+  const { currentQuestion, guessedLetters, questions, solved } = useAppSelector((state) => state.game);
 
   const [letter, setLetter] = useState("");
   const [word, setWord] = useState("");
