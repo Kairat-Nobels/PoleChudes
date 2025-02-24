@@ -1,0 +1,28 @@
+.admin {
+  &Content {
+    padding: 20px;
+  }
+  h2 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .actionButtons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+    button {
+      background: none;
+    }
+  }
+}
+.editModal {
+  margin-top: 120px !important;
+}

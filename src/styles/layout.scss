@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+
+  .rs-navbar-item {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 7px 15px;
+    border-radius: 10px;
+    height: auto;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #3498ff;
+      color: #f2f2f2;
+    }
+  }
+}

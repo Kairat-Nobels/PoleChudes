@@ -1,0 +1,25 @@
+@use 'layout';
+@use 'startPage';
+@use 'gamePage';
+@use 'adminPage';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grey {
+  color: #999;
+}
